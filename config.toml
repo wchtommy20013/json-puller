@@ -1,12 +1,13 @@
+# General Configs
 [__config]
 base_url = "https://dummyjson.com" 
 bearer_token = ""
 
-
-# A table defines a new fetch action, this tag name is the filename where response will save to
+# A table defines a new fetch action, response will save to {table name}.json
+# This fetches /products/search?q=Laptop and save response to `laptops.json`
 [laptops]
 endpoint = "/products/search"
 query = { q = 'Laptop' }
 
-# This fetches /products endpoint with no query
+# This fetches /products and save response to `products.json`
 [products]
