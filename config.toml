@@ -2,6 +2,7 @@
 [__config]
 base_url = "https://dummyjson.com" 
 bearer_token = ""
+interval = 300 # in seconds
 
 # A table defines a new fetch action, response will save to {table name}.json
 # This fetches /products/search?q=Laptop and save response to `laptops.json`
