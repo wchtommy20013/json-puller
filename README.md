@@ -107,6 +107,23 @@ To get a local copy up and running follow these simple example steps.
   ```
 2. Configure `config.toml`
 
+* Example (Credit to https://dummyjson.com/)
+  ```toml
+# General Configs
+[__config]
+base_url = "https://dummyjson.com" 
+bearer_token = ""
+interval = 300 # in seconds
+
+# A table defines a new fetch action, response will save to {table name}.json
+# This fetches /products/search?q=Laptop and save response to `laptops.json`
+[laptops]
+endpoint = "/products/search"
+query = { q = 'Laptop' }
+
+# This fetches /products and save response to `products.json`
+[products]
+  ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
