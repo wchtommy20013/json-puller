@@ -35,7 +35,8 @@ async function main() {
         }
         const query = config[key].query ? Object.keys(config[key].query).map(prop => `${prop}=${config[key].query[prop]}`).join('&') : '';
         const url = `${config.__config.base_url}${config[key].endpoint ?? `/${key}`}?${query}`;
-        console.log('Fetch', url);
+        const outputDir = `${env.outputDir}/${key}.json`;
+        console.log('Fetch', url, "into", outputDir);
         const headers = (config.__config.bearer_token) ? {
             "Authorization": `Bearer ${config.__config.bearer_token}`
         } : {};

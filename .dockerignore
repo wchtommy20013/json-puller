@@ -1,0 +1,11 @@
+*.md
+!README*.md
+README-secret.md
+
+.git
+.cache
+.env*
+node_modules
+
+data/*
+!data/.keep
