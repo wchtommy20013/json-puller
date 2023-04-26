@@ -106,9 +106,9 @@ To get a local copy up and running follow these simple example steps.
   CONFIG_FILE_PATH=./config.toml  # Path to configuration file, use a remote endpoint if USE_REMOTE_CONFIG=1
   ```
 2. Configure `config.toml`
-
-* Example (Credit to https://dummyjson.com/)
   ```toml
+# Example (Credit to https://dummyjson.com/)
+
 # General Configs
 [__config]
 base_url = "https://dummyjson.com" 
